@@ -1,11 +1,6 @@
 # Summary
 
-This is my solution to the Insight Fellows Program Data Engineering Bootcamp Challenge. 
-
-This program takes publicly available EDGAR files, reads them line-by-line, and then identifies when a user visits, how many documents they access during their visit, and how long they stay. It then writes this information to a txt file.
-
-Each line represents a user, when they accessed the site, when they left it, how long they stayed, and how many documents they looked at in that time.
-
+This program takes publicly available EDGAR files, reads them line-by-line, and then identifies when a user visits, how many documents they access during their visit, and how long they stay. It then writes this information to a txt file. Each line represents a user, when they accessed the site, when they left it, how long they stayed, and how many documents they looked at in that time.
 
 # Dependencies
 This program is written in Python, and uses the following packages:
@@ -19,10 +14,10 @@ collections
 
 ### `log.csv`
 
-The SEC provides weblogs stretching back years and is [regularly updated, although with a six month delay](https://www.sec.gov/dera/data/edgar-log-file-data-set.html). This program processes those files.
+The data for this challenge comes from the SEC. The SEC provides weblogs stretching back years and is [regularly updated, although with a six month delay](https://www.sec.gov/dera/data/edgar-log-file-data-set.html). This program is designed to process one set of those files.
 
 ### `inactivity_period.txt`
-This file holds a single integer value denoting the period of inactivity (in seconds) that your program should use to identify a user session. The value will range from 1 to 86,400 (i.e., one second to 24 hours)
+This file holds a single integer value denoting the period of inactivity (in seconds) to identify a user session. 
 
 ## Output file
 
